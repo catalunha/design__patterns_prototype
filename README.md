@@ -7,6 +7,8 @@ Teriamos que usar um abstract clone ?
 
 Vejamos...
 # usando o copyWith
+
+## A implementação
 ```Dart
 class User1Model {
   final String name;
@@ -27,7 +29,7 @@ class User1Model {
   }
 }
 ```
-# testando o copyWith
+## testando o copyWith
 ```Dart
 void main() {
   User1Model user1model = User1Model(name: 'user1');
@@ -43,7 +45,7 @@ void main() {
   print('user1modelCopy.toString(): ${user1modelCopy.toString()}');
 }
 ```
-# saida com copyWith
+## saida com copyWith
 Como podemos ver ele não copia corretamente os campos privados.
 ```
 user1model.hashCode: 42292417
